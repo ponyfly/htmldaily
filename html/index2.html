@@ -2,29 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=750,user-scalable=no">
+  <meta name="viewport" content="width=400,user-scalable=no">
   <title>每日签语</title>
   <style>
     *{ margin:0; padding:0;}
-    @font-face {
-      font-family: FZB;
-      /*src: url('font/msyh.ttf');*/
-    }
-    .app{width:750px; height:600px; margin:0 auto; padding:16px 30px;box-sizing: border-box; background-color: #eeeff0;font-family: FZB}
-    .app .content{ width:100%; height:100%;box-sizing: border-box;}
-    .app .content .title{font-size:34px;color: #141414;text-align: center;}
-    .app .content .share-img-wrap{margin:30px auto;width:100%; height:436px;overflow: hidden}
-    .app .content .share-img{display: block; width:100%; font-size: 48px; color: #271400;}
+    .app{ position: relative;width:420px; height:336px; margin:0 auto;box-sizing: border-box; background-color: #eeeff0;}
+    .app img{display: block}
+    .app .share-img2{ position: absolute; bottom:-2px; left:0; width:100%; height:100%;}
+
   </style>
 </head>
 <body>
 <div id="app" class="app">
-  <div class="content">
-    <div class="title">转发这个发这个锦鲤发锦鲤</div>
-    <div class="share-img-wrap">
-      <img class="share-img" src="https://static2.j.cn/img/forum/180717/1829/20006bd0ddd949ba.gif?imageMogr2/thumbnail/690x/gravity/center/crop/x436">
-    </div>
-  </div>
+  <img class="share-img1" src="https://static2.j.cn/img/forum/180717/1829/20006bd0ddd949ba.gif?imageMogr2/thumbnail/420x/gravity/center/crop/x336">
+  <img class="share-img2" src="../imgs/share-img2.png" alt="">
 </div>
 </body>
 </html>
